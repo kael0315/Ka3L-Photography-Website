@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Ka3L Photography — Stills &amp; Lifestyle Portraiture</title>
+<meta name="description" content="Ka3L Photography — birthday, prenup, food and commercial, and all-in-one bundle photography in Bacolod City. Book your session online.">
+<meta name="theme-color" content="#0b2b33">
+<meta name="color-scheme" content="dark light">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ka3L Photography">
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="kalel.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="kalel.png">
+</head>
+<body>
+
+<div id="preloader" aria-hidden="true">
+  <img src="kalel.png" alt="" class="preloader-mark">
+</div>
+
+<div class="sprocket-strip" aria-hidden="true"></div>
+
+<header id="siteHeader" class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <img src="kalel.png" alt="Ka3L Photography logo" class="brand-mark">
+      <span class="brand-text">Ka3L<em>Photography</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#top" class="nav-link" data-section="top">Home</a>
+      <a href="#packages" class="nav-link" data-section="packages">Packages</a>
+      <a href="#booking" class="nav-link" data-section="booking">Booking</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    </nav>
+
+    <a href="#packages" class="btn btn-solid nav-cta">Book a slot</a>
+
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-grain" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="eyebrow eyebrow-light reveal">Est. Bacolod City</p>
+    <h1 class="hero-title reveal">
+      Every frame,<br>
+      <span class="hero-title-accent">deliberately</span> composed.
+    </h1>
+    <p class="hero-sub reveal">
+      Birthdays, engagements, brand stories, and full milestone bundles —
+      shot with a steady hand, edited with restraint, delivered on time.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#packages" class="btn btn-solid">View packages</a>
+      <a href="#booking" class="btn btn-outline-light">Book your date</a>
+    </div>
+  </div>
+
+  <div class="hero-mark reveal" aria-hidden="true">
+    <svg viewBox="0 0 200 200" class="iris" id="heroIris">
+      <defs>
+        <linearGradient id="bladeGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#7fe9f7"/>
+          <stop offset="55%" stop-color="#22d3ee"/>
+          <stop offset="100%" stop-color="#0b7285"/>
+        </linearGradient>
+        <radialGradient id="pupilGrad" cx="35%" cy="35%" r="75%">
+          <stop offset="0%" stop-color="#123b44"/>
+          <stop offset="100%" stop-color="#06181d"/>
+        </radialGradient>
+        <filter id="irisGlow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="3.5" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <circle class="iris-ring-outer" cx="100" cy="100" r="98" fill="none" stroke="currentColor" stroke-width="1" opacity="0.28"/>
+      <circle class="iris-ring-inner" cx="100" cy="100" r="82" fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.16"/>
+      <g id="irisBlades" filter="url(#irisGlow)"></g>
+      <circle cx="100" cy="100" r="9" fill="url(#pupilGrad)"/>
+      <circle cx="100" cy="100" r="9" fill="none" stroke="url(#bladeGrad)" stroke-width="1.1"/>
+    </svg>
+  </div>
+
+  <button class="scroll-cue" id="scrollCue" aria-label="Scroll to packages">
+    <span>Scroll</span>
+    <i></i>
+  </button>
+</section>
+
+<div class="sprocket-strip" aria-hidden="true"></div>
+
+<section id="packages" class="section packages-section">
+  <div class="section-head reveal">
+    <p class="eyebrow">Rate Card</p>
+    <h2 class="section-title">Choose your category</h2>
+    <p class="section-sub">Pick a coverage type below to see the packages built for it. Every
+      package includes color-graded, retouched soft copies and raw files delivered via a private
+      cloud link.</p>
+  </div>
+
+  <div class="tab-bar reveal" id="tabBar"></div>
+  <p class="pkg-category-note" id="categoryNote"></p>
+  <div class="package-grid" id="packageGrid"></div>
+</section>
+
+<div class="sprocket-strip sprocket-dark" aria-hidden="true"></div>
+
+<section id="booking" class="section booking-section">
+  <div class="section-head reveal">
+    <p class="eyebrow eyebrow-light">Reserve Your Slot</p>
+    <h2 class="section-title section-title-light">Book your session</h2>
+    <p class="section-sub section-sub-light">Pick a date and time, then complete the Premium
+      Service Contract — the final step to confirm and secure your booking.</p>
+  </div>
+
+  <div class="summary-bar reveal" id="summaryBar">
+    <span class="summary-label">Selected package:</span>
+    <span id="summaryPkgName" class="summary-value">None yet — pick one above</span>
+    <span id="summaryPkgPrice" class="summary-price"></span>
+  </div>
+
+  <div class="booking-grid reveal">
+    <div class="calendar-panel">
+      <div class="calendar-head">
+        <button id="prevMonth" class="cal-nav" aria-label="Previous month">&#8249;</button>
+        <h3 id="monthLabel" class="cal-month"></h3>
+        <button id="nextMonth" class="cal-nav" aria-label="Next month">&#8250;</button>
+      </div>
+      <div class="cal-weekdays">
+        <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+      </div>
+      <div id="calendarGrid" class="cal-grid"></div>
+      <p class="cal-note">Greyed / struck-through dates are fully booked or in the past.</p>
+    </div>
+
+    <div class="time-slot-wrap">
+      <p class="eyebrow">Available times</p>
+      <div id="timeSlots" class="time-slots">
+        <p class="time-slot-placeholder">Select a date on the calendar to see open times.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contract-wrap hidden reveal" id="contractWrap">
+    <div class="contract-card">
+      <div class="contract-head">
+        <p class="eyebrow">Final Step</p>
+        <h3>Premium Service Contract</h3>
+        <p>Studio &amp; Cinematic Production Services — please review and complete to confirm your booking.</p>
+      </div>
+
+      <div class="contract-summary">
+        <div><span class="cs-label">Selected Package</span><span class="cs-value" id="csPackage">—</span></div>
+        <div><span class="cs-label">Total Rate (PHP)</span><span class="cs-value" id="csRate">—</span></div>
+        <div><span class="cs-label">Event Date</span><span class="cs-value" id="csDate">—</span></div>
+        <div><span class="cs-label">Time</span><span class="cs-value" id="csTime">—</span></div>
+      </div>
+
+      <form id="contractForm">
+        <div class="contract-fields">
+          <div class="field">
+            <label for="clientName">Client name (printed)</label>
+            <input required id="clientName" type="text" placeholder="Juana Dela Cruz" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="clientEmail">Contact — email</label>
+            <input required id="clientEmail" type="email" placeholder="juana@email.com" autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="clientPhone">Contact — phone number</label>
+            <input required id="clientPhone" type="tel" placeholder="09XX XXX XXXX" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="eventVenue">Event venue / location</label>
+            <input required id="eventVenue" type="text" placeholder="e.g. L'Fisher Hotel, Bacolod City" autocomplete="off">
+          </div>
+        </div>
+
+        <div class="terms-block">
+          <p class="terms-title">Terms of Agreement</p>
+          <div id="accordion"></div>
+        </div>
+
+        <label class="agree-row">
+          <input type="checkbox" id="agreeCheck" required>
+          <span>I have read and agree to the Terms of Agreement above, and I understand the reservation
+            deposit is non-refundable.</span>
+        </label>
+
+        <div class="signature-block">
+          <div class="field">
+            <label for="signatureInput">E-signature — type your full name</label>
+            <input id="signatureInput" type="text" placeholder="Type your full name" autocomplete="off">
+            <p class="signature-preview" id="signaturePreview"></p>
+          </div>
+          <p class="signature-date">Date signed: <span id="signatureDate"></span></p>
+        </div>
+
+        <p id="formError" class="form-error hidden"></p>
+        <button type="submit" class="btn btn-solid btn-full">Sign &amp; confirm booking</button>
+      </form>
+
+      <div id="successMsg" class="success-msg hidden">
+        <svg width="22" height="22" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="4"/>
+          <circle cx="50" cy="50" r="10" fill="currentColor"/>
+        </svg>
+        <div>
+          <p class="success-title">You're booked!</p>
+          <p class="success-details" id="successDetails"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sprocket-strip" aria-hidden="true"></div>
+
+<footer id="contact" class="site-footer">
+  <div class="footer-inner reveal">
+    <div class="footer-brand">
+      <img src="kalel.png" alt="Ka3L Photography logo" class="footer-mark">
+      <p class="footer-photographer">Christian Joseph F. Ingan<br>Lead Photographer</p>
+    </div>
+    <div class="footer-col">
+      <p class="eyebrow">Booking Terms</p>
+      <p class="footer-text">A non-refundable reservation deposit locks your date. Raw files
+        within 48 hours; edited soft copies within 14 working days.</p>
+    </div>
+    <div class="footer-col">
+      <p class="eyebrow">Reach Out</p>
+      <p class="footer-text"><a href="mailto:ka3lphotography@gmail.com">ka3lphotography@gmail.com</a><br>
+        <a href="tel:+639949704942">0994 970 4942</a><br>Bacolod City, Philippines</p>
+    </div>
+  </div>
+  <p class="footer-bottom">© <span id="year"></span> Ka3L Photography. All frames reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
